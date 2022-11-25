@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactApp</title>
+</head>
+<body>
+    <!-- id root, para ser seleccionada al momento de renderizar en el navegador -->
+    <div id="root"></div>
+    <!-- Traduce todo códiglo moderno para ser soportado por un navegador web -->
+    <script type="text/babel">
+        // Selecciona la etiqueta que tenga el id root, ese será nuestro sitio de renderizado
+        const divRoot = document.querySelector('#root');
+        const nombre = 'Gus'
+        // Para ingresar código de js se utilizan los brakets "{}"
+        const h1Tag = <h1> Hola soy {nombre} </h1>;
+        // Para renderizar en el navegador ("Contenido a renderizar", "Ubicación a renderizar");
+        ReactDOM.render(h1Tag, divRoot);
+    </script>
+
+
+</body>
+</html>
