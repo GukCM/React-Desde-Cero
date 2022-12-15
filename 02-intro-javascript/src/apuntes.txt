@@ -1,1 +1,26 @@
 String methods
+//Promises => pending, resolve, reject
+//async await => Contenido asincrono
+//
+//La promesa recibe 2 parametros, reject y resolve
+
+const myPromise = new Promise((resolve,reject)=>{
+
+    const random = Math.floor(Math.random() *2);
+
+    if(random ===1){
+        resolve("Success");
+    }else{
+        reject("Fail");
+    }
+});
+
+console.log(
+    myPromise.then((resultado) => console.log("Hola Resultado", resultado)).catch((err) => console.log("Error", err))
+    );
+
+
+    fetch('URL')
+    .then((informacion) => informacion.json()
+    .then((res)=> console.log(res)))
+    .catch((err)=> console.log(err));
