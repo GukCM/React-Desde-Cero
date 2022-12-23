@@ -1,10 +1,19 @@
-
-
+    //Funciones asincronas son basicamente un objeto, entonces podría dar errores, no usarlas.
+    //Al poner la constante aquí, React no reprosesará la declaración de esta constante.
+    //Objetos no son validos como un hijo en React
+    // const newMessage = {
+    //     message: 'Hola gente',
+    //     title: 'Gustavo',
+    // };
+    const getResult = () => 4 + 4;
 export function MyName() {
+
+
     return (
         //Sinonimo de un fragmento, evita crear divs innecesarios, tenemos que regresar siempre un nodo padre
         <>
-            <h1>Soy Gustavo!</h1>
+            <h1>{ getResult() }</h1>
+            {/* <code> { JSON.stringify( newMessage) } </code> */}
             <p>Soy un subtitulo</p>
         </>
     )
