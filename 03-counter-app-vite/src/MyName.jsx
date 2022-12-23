@@ -5,19 +5,31 @@
     //     message: 'Hola gente',
     //     title: 'Gustavo',
     // };
-    const getResult = () => 4 + 4;
-export function MyName() {
+//     const getResult = () => 4 + 4;
+// export function MyName() {
 
 
-    return (
-        //Sinonimo de un fragmento, evita crear divs innecesarios, tenemos que regresar siempre un nodo padre
+//     return (
+//         //Sinonimo de un fragmento, evita crear divs innecesarios, tenemos que regresar siempre un nodo padre
+//         <>
+//             <h1>{ getResult() }</h1>
+//             {/* <code> { JSON.stringify( newMessage) } </code> */}
+//             <p>Soy un subtitulo</p>
+//         </>
+//     )
+// }
+export const MyName = ({title, subTitle}) =>{
+    console.log(title);
+    return(
         <>
-            <h1>{ getResult() }</h1>
-            {/* <code> { JSON.stringify( newMessage) } </code> */}
-            <p>Soy un subtitulo</p>
+        <h1>{ title }</h1>
+        <h2>{ subTitle + 1 }</h2>
+        <p>Soy un subtitulo</p>
         </>
     )
-}
+};
+
+
 
 // import { useState } from "react"
 // export const MyName = () =>{
