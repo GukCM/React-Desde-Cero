@@ -1,5 +1,13 @@
-export function MyName(){
-    return (<h1>Soy Gustavo!</h1>)
+
+
+export function MyName() {
+    return (
+        //Sinonimo de un fragmento, evita crear divs innecesarios, tenemos que regresar siempre un nodo padre
+        <>
+            <h1>Soy Gustavo!</h1>
+            <p>Soy un subtitulo</p>
+        </>
+    )
 }
 
 // import { useState } from "react"
