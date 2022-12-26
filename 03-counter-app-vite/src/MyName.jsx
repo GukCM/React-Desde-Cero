@@ -24,7 +24,7 @@ export const MyName = ({title, subTitle}) =>{
         <>
         <h1>{ title }</h1>
         <h2>{ subTitle + 1 }</h2>
-        <p>Soy un subtitulo</p>
+        <p>Soy un subtitulo asi es</p>
         </>
     )
 };
